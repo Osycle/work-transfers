@@ -5,10 +5,10 @@
 */
 
 $color-1: #ecce06 !default;
-$color-2: #e17b31 !default;
+$color-2: #757c81 !default;
 $color-3: #3a82db !default;
-$color-4: #757c81 !default;
-$color-5: #e3a600 !default;
+$color-4: #e17b31 !default;
+$color-5: #65a328 !default;
 $color-special-1: #2e1c11;
 
 $font-family-1: "Open Sans";
@@ -607,7 +607,7 @@ table {
 		background-color: $color-1;
 	}
 	&:not(.changecolor-none):hover{
-		background-color: $color-3;
+		background-color: $color-2;
 	}
 	&.radius{
 		border-radius: 20px;
@@ -751,7 +751,7 @@ body{
 	-webkit-font-smoothing: antialiased;
 	text-size-adjust: none;
 
-	font: 14px $font-family-1;
+	font: 15px $font-family-1;
 	overflow-x: hidden;
 	//color: white;
 	//height: auto;
@@ -891,6 +891,7 @@ h1, h2, h3, h4{
 h1{
 	line-height: 125%;
 	font-size: em(30, 15);
+	text-transform: uppercase;
 	margin-bottom: 15px;
 	font-weight: 700;
 	@media (max-width: 430px) {
@@ -907,18 +908,20 @@ h2{
 } 
 h3{
 	font-weight: 600;
-	font-size: em(21, 15);
+	font-size: em(20, 15);
 	@media (max-width: 430px) {
 		font-size: em(20/1.1, 15);
 	}
 }
 h4{
-	font-size: em(18, 15);
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: em(16, 15);
 }
 h5{	
 	line-height: 150%;
 	font-weight: 700;
-	font-size: em(16, 15);
+	font-size: em(14, 15);
 }
 
 .h-style-1{
