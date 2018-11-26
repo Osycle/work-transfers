@@ -23,7 +23,7 @@ $color-gray-2: #b7b7b7;
 $color-gray-3: #343434;
 
 $bg-color-black: #000;
-$bg-color-gray: #fafafa;
+$bg-color-gray: $color-gray-3;
 
 
 
@@ -751,11 +751,11 @@ body{
 	-webkit-font-smoothing: antialiased;
 	text-size-adjust: none;
 
-	font: 15px $font-family-1;
+	font: 14px $font-family-1;
 	overflow-x: hidden;
 	//color: white;
 	//height: auto;
-	background-color: white;
+	//background-color: $bg-color-gray;
 	//background-image: url('../img/bg/bg-body.jpg');
 	background-repeat: repeat-y;
 	//background-size: cover;

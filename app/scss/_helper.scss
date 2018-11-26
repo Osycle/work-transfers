@@ -193,20 +193,25 @@ html{
 	flex-wrap: wrap;
 	position: relative;
 }
-[class*='align-i']{
-	display: flex;
-}
-[class*='align-i-center']{
+.align-i-center{
 	align-items: center;
+	display: flex;
 	&>div{
 		display: inline-block;
 	}
 	flex: 1 1;
-	 flex-wrap: wrap;
+	flex-wrap: wrap;
 }
-.align-i-end{
+.align-end, .align-center{
+	display: flex;
+}
+.align-end{
 	align-items: flex-end;
 }
+.align-center{
+	align-items: center;
+}
+
 
 
 .flex-def{
@@ -220,6 +225,7 @@ html{
 }
 .justify-c-center{ justify-content: center; }
 .justify-c-between{ justify-content: space-between; }
+.justify-c-end{ justify-content: flex-end; }
 
 
 @for $i from 0 through 12{

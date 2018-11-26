@@ -16,23 +16,33 @@
 	background-repeat: no-repeat;
 	background-position-y: center;
 	background-size: cover;
-	transition: 0.4s;
-	overflow: hidden;
-	@media (min-width: 992px) {
-		filter: grayscale(1);
-		&:hover{
-			filter: grayscale(0);
-		}
-	}
+}
+.footer-content{
 	@media (max-width: 991px) {
-		.header-link{
-			margin: 15px 0;
-			li{
-				width: 100%; 
-			}
+		.container{
+			padding-bottom: 0;
+		}
+		.align-center{
+			flex-direction: column;
 		}
 	}
-
+}
+.icon-offset{
+	@media (min-width: 992px){
+		padding-right: 15px;
+	}
+}
+.footer-contacts{
+	.fa{
+		font-size: 20px;
+		color: $color-1;
+	}
+	.fa-map-marker{
+		font-size: 25px;
+	}
+	.fa-envelope{
+		font-size: 18px;
+	}
 }
 .socicons{
 	font-size: 20px;

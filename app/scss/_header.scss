@@ -36,7 +36,7 @@ $header-min-menu: 70px;
 .header-hidden{
 	//position: relative;
 	height: $header-top-height+$header-bottom-height;
-	background-color: transparent;
+	background-color: #212121;
 	display: none;
 	transition: height 0.3s ease-in-out 0.4s;
 	@media ( max-width: 991px ){
@@ -45,11 +45,10 @@ $header-min-menu: 70px;
 	}
 }
 .header-offset{
-	.img{
-		height: $header-top-height;
-		width: 100%;
-		background-position: center;
-		background-size: cover;
+	background-color: #212121;
+	height: $header-top-height+$header-bottom-height;
+	@media (max-width: 991px) {
+		display: none;
 	}
 }
 .header-top{
@@ -346,7 +345,7 @@ ul[class*="sub-menu"]{
 	z-index: 100;
 	color: white;
 	box-shadow: 0 0 20px 0 black;
-	background-color: white;
+	background-color: #333333;
 	.min-menu-logo{
 		padding: 12px 0;
 		width: 100%;
@@ -477,7 +476,7 @@ ul[class*="sub-menu"]{
 }
 .icon-bar{
 	width: 100%;
-	background-color: $color-2;
+	background-color: $color-1;
 	height: 1px;
 	position: relative;
 	display: block;
