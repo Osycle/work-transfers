@@ -298,6 +298,9 @@
 		.img-content{
 			height: 75px;
 		}
+		.desc-content{
+			min-height: 80px;
+		}
 		img{
 			transform: translateY(-50%);
 			border-radius: 50%;
@@ -322,6 +325,34 @@
 		.bg-white{
 			background-color: rgba(white, 0.3);
 			height: 100%;
+		}
+	}
+}
+
+//transports
+.transports-types{
+	.cap-static{
+		height: 260px;
+		.wrapper{
+			height: 260px;
+		}
+	}
+}
+.transports-type{
+	figure{
+		.wrapper{
+			position: relative;
+			transition: all 0.5s ease;
+		}
+	}
+}
+.transports-type-items{
+
+	figure{
+		.img{
+			height: 260px;
+			background-size: cover;
+			background-position: center;
 		}
 	}
 }

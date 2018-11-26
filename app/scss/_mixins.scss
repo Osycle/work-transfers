@@ -132,7 +132,6 @@
 		letter-spacing: 0;
 	}
 
-
 	$mrow: 1.29;
 	//$mrow : ( (100 - $width)/($items*2) );
 	$wid: (100-$mrow*($items*2))/$items;
@@ -142,15 +141,21 @@
 		$wid: 100;
 	}
 
-	margin-left: -+($mrow)+%;
-	margin-right: -+( $mrow )+%;
-//100/$items
-	#{$tag}, .boxes-cell{
-		margin-left:  ($mrow)+%;
-		margin-right:  ($mrow)+%;
-		//width: ( ($width/$item)+( $item / ( $item * 10) ) )+%;
-		width: $wid+%;
-
+	&:not(.serried){
+		margin-left: -+($mrow)+%;
+		margin-right: -+( $mrow )+%;
 	}
+	&:not(.serried){
+		#{$tag}, .boxes-cell{
+			margin-left:  ($mrow)+%;
+			margin-right:  ($mrow)+%;
+			width: $wid+%;
+		}
+	}
+	#{$tag}, .boxes-cell{
+		width: (100/$items)+%;
+	}
+
+
 
 }

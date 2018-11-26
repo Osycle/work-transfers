@@ -225,6 +225,7 @@ html{
 }
 .justify-c-center{ justify-content: center; }
 .justify-c-between{ justify-content: space-between; }
+.justify-c-start{ justify-content: flex-start; }
 .justify-c-end{ justify-content: flex-end; }
 
 
@@ -266,11 +267,13 @@ html{
 /* flexboxes */
 [class*='flexboxes']{
 	display: flex;
-	justify-content: center;
 	flex-direction: row;
 	flex-wrap: wrap;
 	figure, .flexboxes-item{
 		display: inline-block;
+	}
+	&:not([class*="justify-c"]){
+		justify-content: center;
 	}
 	&:not(.serried):not(.flexboxes-item){
 		margin-left: -15px;
